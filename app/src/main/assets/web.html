@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8"/>
+    <title>Title</title>
+    <h1 id="h">title</h1>
+    <input id="v" type="button" value="js调native" onclick="callAndroid()">
+    <input id="v2" type="button" value="js调native 返回值" onclick="callAndroidWithParams()">
+    <input id="v3" type="button" value="js调native 返回值" onclick="callAndroidWithParams2()">
+</head>
+<body>
+<script type="text/javascript">
+ function callAndroid() {
+  android.toastMessage("哈哈,i m webview msg",2);
+ }
+ function androidCallJs(arg) {
+   document.getElementById("h").innerHTML= arg;
+ }
+ function androidCallJs2(i,m)
+{
+ document.getElementById("h").innerHTML= i+m;
+}
+
+ function callAndroidWithParams()
+{
+ var r=android.result("哈");
+ document.getElementById("h").innerHTML= r;
+}
+ function callAndroidWithParams2()
+{
+ var r=android.result2("哈");
+ document.getElementById("h").innerHTML= r;
+}
+
+
+
+</script>
+</body>
+</html> 

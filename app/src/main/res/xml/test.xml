@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <test name="1">
+        <ddd name="ccc">ddd</ddd>
+    </test>
+    <test name="1">li2</test>
+    <test name="1">li3</test>
+    <test name="1">li4</test>
+    <test name="1">li5</test>
+    <test name="1">li6</test>
+    <test name="1">li7</test>
+</resources>
